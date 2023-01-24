@@ -13,7 +13,8 @@ pipeline {
 				}
 			}
 			 parameters {
-			 	string ( name: 'branch' , defaultValue: 'master' , description: 'branch of the mechanical') 
+			 	string ( name: 'branch' , defaultValue: 'master' , description: 'branch of the mechanical')
+				boolenparam( name: 'boolen' , defaultValue: 'main' , description: 'branch of civil')
 				}
 			}
-		}
+		
