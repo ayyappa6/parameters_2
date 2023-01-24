@@ -1,0 +1,19 @@
+pipeline {
+	agent any 
+		stages {
+			stage ('AVENGERS'){
+				steps {
+					echo " i can do this all day "
+					}
+				}
+			stage ('THOR'){
+				steps {
+					echo " you should gone for the haed"
+					}
+				}
+			}
+			 parameters {
+			 	string ( name: 'branch' , defaultValue: 'master' , description: 'branch of the mechanical') 
+				}
+			}
+		}
